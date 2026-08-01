@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Image Gallery</h1>
+        <p>Browse beautiful images with next/previous controls and category filters.</p>
+      </header>
+
+      <div class="filters" aria-label="Image categories">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Nature">Nature</button>
+        <button class="filter-btn" data-filter="City">City</button>
+        <button class="filter-btn" data-filter="Tech">Tech</button>
+        <button class="filter-btn" data-filter="Travel">Travel</button>
+      </div>
+
+      <section class="gallery">
+        <div class="main-image-card">
+          <img id="mainImage" src="images/forest.svg" alt="Featured gallery image" />
+          <div class="image-info">
+            <span id="imageCategory" class="category-pill">Nature</span>
+            <h2 id="imageTitle">Sunlit Forest</h2>
+            <div class="controls">
+              <button id="prevBtn" class="nav-btn">← Previous</button>
+              <span id="counter" class="counter">1 / 6</span>
+              <button id="nextBtn" class="nav-btn">Next →</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="thumbs" id="thumbs"></aside>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
